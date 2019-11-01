@@ -27,5 +27,7 @@ services:
       MYSQL_USER: wordpress
     volumes:
       - $PWD/mysql:/var/lib/mysql
+    networks:
+      - net
 networks:
   net:
